@@ -33,22 +33,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": {
-          "raw": "{{url}}/get?foo=bar",
-          "host": [
-            "{{url}}"
-          ],
-          "path": [
-            "get"
-          ],
-          "query": [
-            {
-              "key": "foo",
-              "value": "bar",
-              "description": "some description of the parameter"
-            }
-          ]
-        },
+        "url": "{{url}}/get",
         "description": "This is the request description. It **supports markdown** as well."
       },
       "response": []
@@ -186,7 +171,7 @@
           "mode": "raw",
           "raw": "{\n\t\"method\": \"PUT\"\n}"
         },
-        "url": "https://postman-echo.com/put"
+        "url": "{{url}}/put"
       },
       "response": [
         {
