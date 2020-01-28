@@ -87,7 +87,7 @@
           "mode": "raw",
           "raw": "{\n\t\"method\": \"POST\"\n}"
         },
-        "url": "https://postman-echo.com/post"
+        "url": "{{url}}/post"
       },
       "response": [
         {
