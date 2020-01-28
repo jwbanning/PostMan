@@ -43,7 +43,7 @@
             {
               "key": "foo",
               "value": "bar",
-              "type": "text"
+              "description": "some description of the parameter"
             }
           ]
         },
