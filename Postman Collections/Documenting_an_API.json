@@ -29,12 +29,14 @@
       "request": {
         "method": "GET",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
         "url": {
-          "raw": "https://postman-echo.com/get?foo=bar",
-          "protocol": "https",
+          "raw": "{{url}}/get?foo=bar",
           "host": [
-            "postman-echo",
-            "com"
+            "{{url}}"
           ],
           "path": [
             "get"
