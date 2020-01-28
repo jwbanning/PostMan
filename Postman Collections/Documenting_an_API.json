@@ -270,7 +270,7 @@
           "mode": "raw",
           "raw": "{\n\t\"method\": \"DELETE\"\n}"
         },
-        "url": "https://postman-echo.com/delete"
+        "url": "{{url}}/delete"
       },
       "response": [
         {
