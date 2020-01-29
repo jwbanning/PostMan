@@ -33,7 +33,22 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "{{url}}/get",
+        "url": {
+          "raw": "{{url}}/get?fff=sss",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "fff",
+              "value": "sss",
+              "type": "text"
+            }
+          ]
+        },
         "description": "This is the request description. It **supports markdown** as well."
       },
       "response": []
@@ -72,7 +87,22 @@
           "mode": "raw",
           "raw": "{\n\t\"method\": \"POST\"\n}"
         },
-        "url": "{{url}}/post"
+        "url": {
+          "raw": "{{url}}/post?foo=bar",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "post"
+          ],
+          "query": [
+            {
+              "key": "foo",
+              "value": "bar",
+              "type": "text"
+            }
+          ]
+        }
       },
       "response": [
         {
