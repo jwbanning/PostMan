@@ -34,7 +34,7 @@
           "raw": ""
         },
         "url": {
-          "raw": "{{url}}/get?fff=sss",
+          "raw": "{{url}}/get?=",
           "host": [
             "{{url}}"
           ],
@@ -43,9 +43,8 @@
           ],
           "query": [
             {
-              "key": "fff",
-              "value": "sss",
-              "type": "text"
+              "key": "",
+              "value": ""
             }
           ]
         },
