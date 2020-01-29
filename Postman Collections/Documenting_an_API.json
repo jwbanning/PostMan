@@ -34,7 +34,7 @@
           "raw": ""
         },
         "url": {
-          "raw": "{{url}}/get?=",
+          "raw": "{{url}}/get?=&key=value",
           "host": [
             "{{url}}"
           ],
@@ -45,6 +45,11 @@
             {
               "key": "",
               "value": ""
+            },
+            {
+              "key": "key",
+              "value": "value",
+              "type": "text"
             }
           ]
         },
