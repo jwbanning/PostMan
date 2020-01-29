@@ -34,7 +34,7 @@
           "raw": ""
         },
         "url": {
-          "raw": "{{url}}/get?=&=",
+          "raw": "{{url}}/get?xxx=yyy&=",
           "host": [
             "{{url}}"
           ],
@@ -43,8 +43,8 @@
           ],
           "query": [
             {
-              "key": "",
-              "value": ""
+              "key": "xxx",
+              "value": "yyy"
             },
             {
               "key": "",
