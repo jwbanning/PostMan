@@ -7,38 +7,6 @@
   },
   "item": [
     {
-      "name": "Postman Echo GET",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "e8da072e-4e8a-4c67-9546-adcadc652bf3",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "_postman_id": "3d10d912-3e09-4cf1-b7d0-9a848670493b",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": "{{url}}/get",
-        "description": "This is the request description. It **supports markdown** as well."
-      },
-      "response": []
-    },
-    {
       "name": "Postman Echo POST",
       "event": [
         {
@@ -136,6 +104,38 @@
           "body": "{\n    \"args\": {},\n    \"data\": {\n        \"method\": \"POST\"\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"host\": \"postman-echo.com\",\n        \"content-length\": \"21\",\n        \"accept\": \"*/*\",\n        \"accept-encoding\": \"gzip, deflate\",\n        \"cache-control\": \"no-cache\",\n        \"content-type\": \"application/json\",\n        \"cookie\": \"sails.sid=s%3AG10mxUHVB65q6zAdIPRPk7kAxyMNpmeM.tn9m63fNTjoJBYkiUShtDIIliVwslI4ys8tvItjT2%2BA\",\n        \"postman-token\": \"e96e5264-9de6-4aa6-8737-3ab5489d561c\",\n        \"user-agent\": \"PostmanRuntime/7.3.0\",\n        \"x-forwarded-port\": \"443\",\n        \"x-forwarded-proto\": \"https\"\n    },\n    \"json\": {\n        \"method\": \"POST\"\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
         }
       ]
+    },
+    {
+      "name": "Postman Echo GET",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "e8da072e-4e8a-4c67-9546-adcadc652bf3",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "3d10d912-3e09-4cf1-b7d0-9a848670493b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "{{url}}/get",
+        "description": "This is the request description. It **supports markdown** as well."
+      },
+      "response": []
     },
     {
       "name": "Postman Echo PUT",
