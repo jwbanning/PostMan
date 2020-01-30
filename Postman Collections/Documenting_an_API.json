@@ -33,25 +33,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": {
-          "raw": "{{url}}/get?123=2222&=",
-          "host": [
-            "{{url}}"
-          ],
-          "path": [
-            "get"
-          ],
-          "query": [
-            {
-              "key": "123",
-              "value": "2222"
-            },
-            {
-              "key": "",
-              "value": ""
-            }
-          ]
-        },
+        "url": "{{url}}/get",
         "description": "This is the request description. It **supports markdown** as well."
       },
       "response": []
