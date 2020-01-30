@@ -72,22 +72,7 @@
           "mode": "raw",
           "raw": "{\n\t\"method\": \"POST\"\n}"
         },
-        "url": {
-          "raw": "{{url}}/post?foo=bar",
-          "host": [
-            "{{url}}"
-          ],
-          "path": [
-            "post"
-          ],
-          "query": [
-            {
-              "key": "foo",
-              "value": "bar",
-              "type": "text"
-            }
-          ]
-        }
+        "url": "{{url}}/post"
       },
       "response": [
         {
