@@ -129,7 +129,7 @@
         "method": "GET",
         "header": [
           {
-            "key": "conten",
+            "key": "Content-Type",
             "value": "application/json",
             "type": "text"
           }
