@@ -127,7 +127,13 @@
       },
       "request": {
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "conten",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": ""
