@@ -31,7 +31,7 @@
               "    pm.expect(pm.response.responseTime).to.be.below(200);",
               "});",
               "",
-              "//postman.setNextRequest('Postman Echo DELETE')",
+              "postman.setNextRequest('Postman Echo DELETE')",
               "",
               ""
             ],
