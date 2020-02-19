@@ -16,7 +16,20 @@
             "exec": [
               "pm.test(\"Status code is 200\", function () {",
               "    pm.response.to.have.status(200);",
-              "});"
+              "});",
+              "",
+              "pm.test(\"Body matches string\", function () {",
+              "    pm.expect(pm.response.text()).to.include(\"bar\");",
+              "});",
+              "",
+              "const response = pm.response.json();",
+              "",
+              "pm.test(\"another test\", function () {",
+              "    pm.expect(response.args.foo).to.eql('bar');",
+              "});",
+              "",
+              "",
+              ""
             ],
             "type": "text/javascript"
           }
@@ -39,7 +52,21 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "{{url}}/get",
+        "url": {
+          "raw": "{{url}}/get?foo=bar",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "foo",
+              "value": "bar"
+            }
+          ]
+        },
         "description": "This is the request description. It **supports markdown** as well."
       },
       "response": []
