@@ -32,7 +32,7 @@
               "});",
               "",
               "",
-              "//postman.setNextRequest('Postman Echo DELETE')",
+              "postman.setNextRequest('Postman Echo DELETE')",
               "",
               ""
             ],
