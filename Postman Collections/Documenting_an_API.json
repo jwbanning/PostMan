@@ -31,7 +31,8 @@
               "    pm.expect(pm.response.text()).to.include(\"bar\");",
               "});",
               "",
-              "//postman.setNextRequest('Postman Echo DELETE')",
+              "",
+              "postman.setNextRequest('Postman Echo DELETE')",
               "",
               ""
             ],
