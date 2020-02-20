@@ -27,11 +27,11 @@
               "    pm.expect(response.args.foo).to.eql('bar');",
               "});",
               "",
-              "pm.test(\"Response time is less than 200ms\", function () {",
+              "pm.test(\"Response time is less than 20ms\", function () {",
               "    pm.expect(pm.response.responseTime).to.be.below(200);",
               "});",
               "",
-              "postman.setNextRequest('Postman Echo DELETE')",
+              "//postman.setNextRequest('Postman Echo DELETE')",
               "",
               ""
             ],
@@ -81,7 +81,7 @@
         {
           "listen": "test",
           "script": {
-            "id": "d4b7f90b-ae5f-437c-bcab-774e2f9db077",
+            "id": "aa409936-eb90-4adb-9ca8-627165561728",
             "exec": [
               "pm.test(\"Status code is 200\", function () {",
               "    pm.response.to.have.status(200);",
