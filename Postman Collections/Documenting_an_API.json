@@ -53,8 +53,8 @@
         "header": [
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
+            "type": "text",
+            "value": "application/json"
           }
         ],
         "body": {
@@ -65,7 +65,7 @@
           }
         },
         "url": {
-          "raw": "{{url}}/get?foo=barrrr",
+          "raw": "{{url}}/get?foo=bar",
           "host": [
             "{{url}}"
           ],
@@ -75,7 +75,7 @@
           "query": [
             {
               "key": "foo",
-              "value": "barrrr"
+              "value": "bar"
             }
           ]
         },
