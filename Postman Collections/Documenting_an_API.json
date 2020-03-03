@@ -59,10 +59,13 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": ""
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
         },
         "url": {
-          "raw": "{{url}}/get?foo=bar",
+          "raw": "{{url}}/get?foo=barrrr",
           "host": [
             "{{url}}"
           ],
@@ -72,7 +75,7 @@
           "query": [
             {
               "key": "foo",
-              "value": "bar"
+              "value": "barrrr"
             }
           ]
         },
