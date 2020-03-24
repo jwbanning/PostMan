@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "18a93420-48b1-42b2-8901-aee728044615",
-    "name": "Uber Echo API",
+    "name": "Zoom Echo API",
     "description": "This is the collection description that would be visible in documentation. It supports **github flavored markdown**.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
@@ -32,10 +32,10 @@
               "});",
               "",
               "",
-              "pm.test(\"Response time is less than 2ms\", function () {",
-              "    pm.expect(pm.response.responseTime).to.be.below(2);",
-              "});",
-              "//postman.setNextRequest('Postman Echo DELETE')",
+              "// pm.test(\"Response time is less than 2ms\", function () {",
+              "//     pm.expect(pm.response.responseTime).to.be.below(2);",
+              "// });",
+              "",
               "",
               ""
             ],
