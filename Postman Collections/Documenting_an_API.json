@@ -7,6 +7,11 @@
   },
   "item": [
     {
+      "name": "Version 1.0 test",
+      "item": [],
+      "_postman_id": "337251d3-67dd-4f14-9982-00d10c0d5348"
+    },
+    {
       "name": "Postman Echo GET",
       "event": [
         {
