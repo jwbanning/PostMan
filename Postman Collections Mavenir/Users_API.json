@@ -15,14 +15,13 @@
             {
               "listen": "test",
               "script": {
-                "id": "a5bf4315-c453-443d-a3c4-547a16d22469",
+                "id": "11c24805-4ed6-49b1-97fd-7e912a274761",
                 "exec": [
                   "const res = pm.response.json();",
                   "",
                   "pm.test(\"Response time is less than 5000ms\", function () {",
                   "    pm.expect(pm.response.responseTime).to.be.below(5000);",
                   "});",
-                  "",
                   "",
                   "",
                   "pm.test(\"Response time is less than 5000ms\", function () {",
@@ -75,7 +74,7 @@
             {
               "listen": "prerequest",
               "script": {
-                "id": "1ce3bdb5-0213-4768-9fb1-449b767177e1",
+                "id": "03f2f49e-7096-49e6-ab19-28d036e78b47",
                 "exec": [
                   ""
                 ],
@@ -101,32 +100,31 @@
               }
             ],
             "body": {
-              "mode": "urlencoded",
-              "urlencoded": [
-                {
-                  "key": "firstName",
-                  "value": "{{firstName}}",
-                  "description": "The user's first name (required)",
-                  "type": "text"
-                },
-                {
-                  "key": "lastName",
-                  "value": "{{lastName}}",
-                  "description": "The user's last name (required)",
-                  "type": "text"
-                },
-                {
-                  "key": "password",
-                  "value": "{{password}}",
-                  "description": "The user's password (required)",
-                  "type": "text"
-                }
-              ],
+              "mode": "raw",
+              "raw": "",
               "options": {
-                "urlencoded": {}
+                "raw": {
+                  "language": "text"
+                }
               }
             },
-            "url": "{{url}}/create",
+            "url": {
+              "raw": "{{url}}/create",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "foo",
+                  "value": "bar",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
             "description": "Creates a new user in the system. The user will be assigned an ID automatically. This can be found in the response."
           },
           "response": [
