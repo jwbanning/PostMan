@@ -348,21 +348,23 @@
               }
             ],
             "url": {
-              "raw": "{{url}}/get?all=true",
+              "raw": "{{url}}/get/?all=true/",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "get"
+                "get",
+                ""
               ],
               "query": [
                 {
                   "key": "all",
-                  "value": "true"
+                  "value": "true/",
+                  "description": "documention "
                 }
               ]
             },
-            "description": "Get all users in the system."
+            "description": "Get all users in the system. Some contentn here."
           },
           "response": [
             {
