@@ -109,7 +109,7 @@
               }
             },
             "url": {
-              "raw": "{{url}}/create",
+              "raw": "{{url}}/create?foo=bar",
               "host": [
                 "{{url}}"
               ],
@@ -120,8 +120,7 @@
                 {
                   "key": "foo",
                   "value": "bar",
-                  "type": "text",
-                  "disabled": true
+                  "type": "text"
                 }
               ]
             },
