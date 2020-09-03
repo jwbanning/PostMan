@@ -24,8 +24,8 @@
                   "});",
                   "",
                   "",
-                  "pm.test(\"Response time is less than 5000ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(5000);",
+                  "pm.test(\"Response time is less than 15000ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(15000);",
                   "});",
                   "",
                   "",
@@ -119,8 +119,7 @@
               "query": [
                 {
                   "key": "foo",
-                  "value": "bar",
-                  "type": "text"
+                  "value": "bar"
                 }
               ]
             },
@@ -1508,19 +1507,19 @@
   ],
   "variable": [
     {
-      "id": "90f333ee-bfff-47b2-a028-0565cc573bf2",
+      "id": "1e03bdd8-3fdf-42d2-94f0-5253dbe040b5",
       "key": "firstName",
       "value": "Ben",
       "type": "string"
     },
     {
-      "id": "6c360b5b-65a0-4636-892b-f9dc6b4b5ae6",
+      "id": "6e38121b-0dff-42af-93cd-71bf7a0ec1d1",
       "key": "lastName",
       "value": "Smith",
       "type": "string"
     },
     {
-      "id": "a6215d32-23c2-4787-a5d6-f433d808356f",
+      "id": "ca5107c1-f71b-4a25-8d29-41a6b4980456",
       "key": "password",
       "value": "pw",
       "type": "string"
