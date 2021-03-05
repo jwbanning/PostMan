@@ -21,18 +21,10 @@
                   "    pm.expect(pm.response.responseTime).to.be.below(200);",
                   "});",
                   "",
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                  "});",
                   "",
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "pm.test(\"Body matches string\", function () {",
+                  "    pm.expect(pm.response.text()).to.include(\"Smith\");",
                   "});",
-                  "",
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                  "});",
-                  "",
                   "",
                   "",
                   "",
@@ -93,7 +85,7 @@
               }
             }
           ],
-          "_postman_id": "cbd866e7-4073-40e5-a2dc-bca0343b1da1",
+          "id": "cbd866e7-4073-40e5-a2dc-bca0343b1da1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -131,13 +123,10 @@
                   "description": "The user's password (required)",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
+              ]
             },
             "url": {
-              "raw": "{{url}}/create?&Api_key=XXXXX",
+              "raw": "{{url}}/create?{{foo}}",
               "host": [
                 "{{url}}"
               ],
@@ -146,14 +135,8 @@
               ],
               "query": [
                 {
-                  "key": "",
+                  "key": "{{foo}}",
                   "value": null
-                },
-                {
-                  "key": "Api_key",
-                  "value": "XXXXX",
-                  "description": "This is used in version 2... ",
-                  "type": "text"
                 }
               ]
             },
@@ -331,7 +314,7 @@
           ]
         }
       ],
-      "_postman_id": "ced2e027-27f5-44ed-bb8e-6b056c3244b1"
+      "id": "ced2e027-27f5-44ed-bb8e-6b056c3244b1"
     },
     {
       "name": "Read",
@@ -460,7 +443,7 @@
               ]
             }
           ],
-          "_postman_id": "6dab34a7-750d-4f9a-9388-255109c666af",
+          "id": "6dab34a7-750d-4f9a-9388-255109c666af",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -671,7 +654,7 @@
               ]
             }
           ],
-          "_postman_id": "36b0afd4-2c22-4787-8dff-6864728d3f3f",
+          "id": "36b0afd4-2c22-4787-8dff-6864728d3f3f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -968,7 +951,7 @@
               ]
             }
           ],
-          "_postman_id": "dae01439-8c11-4752-b2c2-805b5310749d",
+          "id": "dae01439-8c11-4752-b2c2-805b5310749d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1055,7 +1038,7 @@
           ]
         }
       ],
-      "_postman_id": "aacce40a-7f28-48dd-b529-5a1ec4d3015b",
+      "id": "aacce40a-7f28-48dd-b529-5a1ec4d3015b",
       "event": [
         {
           "listen": "prerequest",
@@ -1234,7 +1217,7 @@
               ]
             }
           ],
-          "_postman_id": "d621d123-a8ef-4815-8e33-bc060071e9a4",
+          "id": "d621d123-a8ef-4815-8e33-bc060071e9a4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1264,10 +1247,7 @@
                   "type": "text",
                   "disabled": true
                 }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{url}}/update?id={{id}}",
@@ -1372,7 +1352,7 @@
           ]
         }
       ],
-      "_postman_id": "1497c984-8b7f-4465-bc56-1b591dd44c6f"
+      "id": "1497c984-8b7f-4465-bc56-1b591dd44c6f"
     },
     {
       "name": "Delete",
@@ -1497,7 +1477,7 @@
               ]
             }
           ],
-          "_postman_id": "57ff7818-df60-4e53-b4c5-19d3aef1383a",
+          "id": "57ff7818-df60-4e53-b4c5-19d3aef1383a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1513,10 +1493,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "",
-              "options": {
-                "raw": {}
-              }
+              "raw": ""
             },
             "url": {
               "raw": "{{url}}/delete?id={{id}}",
@@ -1607,7 +1584,7 @@
           ]
         }
       ],
-      "_postman_id": "9b6b8bb0-4148-49bd-beb1-217a17c4e019"
+      "id": "9b6b8bb0-4148-49bd-beb1-217a17c4e019"
     }
   ],
   "event": [
@@ -1634,22 +1611,19 @@
   ],
   "variable": [
     {
-      "id": "c0514282-c027-43d7-8dc0-4dd3ecc4b8be",
+      "id": "0a423e05-02f9-416e-94da-b4bb6f6de844",
       "key": "firstName",
-      "value": "Ben",
-      "type": "string"
+      "value": "Ben"
     },
     {
-      "id": "c388e444-c838-4a3b-aaa2-93e19365a0b4",
+      "id": "f609c86e-48e1-4885-b829-fb724a9796f0",
       "key": "lastName",
-      "value": "Smith",
-      "type": "string"
+      "value": "Smith"
     },
     {
-      "id": "b15a0b95-0063-4380-a097-e874f338cf4e",
+      "id": "13995b96-aafe-45e7-8f42-779218b29ce9",
       "key": "password",
-      "value": "pw",
-      "type": "string"
+      "value": "pw"
     }
   ]
 }
