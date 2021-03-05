@@ -21,6 +21,20 @@
                   "    pm.expect(pm.response.responseTime).to.be.below(200);",
                   "});",
                   "",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});",
+                  "",
+                  "",
+                  "",
                   "",
                   "console.log(pm.response)",
                   "",
@@ -123,7 +137,7 @@
               }
             },
             "url": {
-              "raw": "{{url}}/create?Foo=bar",
+              "raw": "{{url}}/create?&Api_key=XXXXX",
               "host": [
                 "{{url}}"
               ],
@@ -132,9 +146,14 @@
               ],
               "query": [
                 {
-                  "key": "Foo",
-                  "value": "bar",
-                  "description": "this is used for the Id of new person"
+                  "key": "",
+                  "value": null
+                },
+                {
+                  "key": "Api_key",
+                  "value": "XXXXX",
+                  "description": "This is used in version 2... ",
+                  "type": "text"
                 }
               ]
             },
@@ -1615,19 +1634,19 @@
   ],
   "variable": [
     {
-      "id": "51a9c952-a777-47a4-a497-216a50e8c757",
+      "id": "c0514282-c027-43d7-8dc0-4dd3ecc4b8be",
       "key": "firstName",
       "value": "Ben",
       "type": "string"
     },
     {
-      "id": "eb0c2cb7-4855-445a-b099-8cbb1d5ff989",
+      "id": "c388e444-c838-4a3b-aaa2-93e19365a0b4",
       "key": "lastName",
       "value": "Smith",
       "type": "string"
     },
     {
-      "id": "ec371ca4-95d9-40d3-a45f-0d1419f1e48a",
+      "id": "b15a0b95-0063-4380-a097-e874f338cf4e",
       "key": "password",
       "value": "pw",
       "type": "string"
