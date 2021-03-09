@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "57b277c8-e233-4ba3-a6ce-2b5911a4b26f",
     "name": "Users API",
-    "description": "First para\n\n\nThis collection is designed to\n show how you might mock, test document a new API. In this case, we're assuming that we're going to create a basic user management API.\n\nIt has basic CRUD operations listed below.\n\nHit the \"Run in Postman\" button to see the pre-request and test scripts powering this collection.\n\nTry running the collection through the Collection Runner to see how the mock allows us to scope out all our responses and write our tests in advance.\n\n## Summary\n\nHaving undergone the effort of building out our collection in Postman first:\n\n- Using Postman Mocks\n- Writing tests\n \nThis has allowed us to then build out our API to match, meaning we could:\n(Update the `url` in the environment to `http://localhost:3000` and run the following Node API: https://github.com/matt-ball/users-api)\n\n- Debug our API as it was being built\n- Ensure parity with our mocks, meeting the designed blueprint\n- Run tests against the API as it was being built so that it's watertight\n\nAs a result:\n\n- We now have a shareable collection for our API\n- We have beautiful, rich documentation showing how it works\n- We can run our collection in a fully automated fashion and attach it to our CI/CD pipeline\n- We can create a Postman Monitor with no added effort to check for responsiveness and correctness",
+    "description": "More context\n\n\nThis collection is designed to\n show how you might mock, test document a new API. In this case, we're assuming that we're going to create a basic user management API.\n\nIt has basic CRUD operations listed below.\n\nHit the \"Run in Postman\" button to see the pre-request and test scripts powering this collection.\n\nTry running the collection through the Collection Runner to see how the mock allows us to scope out all our responses and write our tests in advance.\n\n## Summary\n\nHaving undergone the effort of building out our collection in Postman first:\n\n- Using Postman Mocks\n- Writing tests\n \nThis has allowed us to then build out our API to match, meaning we could:\n(Update the `url` in the environment to `http://localhost:3000` and run the following Node API: https://github.com/matt-ball/users-api)\n\n- Debug our API as it was being built\n- Ensure parity with our mocks, meeting the designed blueprint\n- Run tests against the API as it was being built so that it's watertight\n\nAs a result:\n\n- We now have a shareable collection for our API\n- We have beautiful, rich documentation showing how it works\n- We can run our collection in a fully automated fashion and attach it to our CI/CD pipeline\n- We can create a Postman Monitor with no added effort to check for responsiveness and correctness",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -21,6 +21,21 @@
                   "    pm.expect(pm.response.responseTime).to.be.below(200);",
                   "});",
                   "",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});",
+                  "pm.test(\"Response time is less than 200ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                  "});",
                   "",
                   "",
                   "pm.test(\"Response time is less than 200ms\", function () {",
@@ -135,7 +150,7 @@
               }
             },
             "url": {
-              "raw": "{{url}}/create?{{foo}}=sdafsdfssef&bar=dsdsdgsg",
+              "raw": "{{url}}/create?{{foo}}=sdafsdfssef&foo=bar",
               "host": [
                 "{{url}}"
               ],
@@ -148,9 +163,9 @@
                   "value": "sdafsdfssef"
                 },
                 {
-                  "key": "bar",
-                  "value": "dsdsdgsg",
-                  "description": "This is a desc ...sd"
+                  "key": "foo",
+                  "value": "bar",
+                  "description": "This is used for XY"
                 }
               ]
             },
@@ -1631,19 +1646,19 @@
   ],
   "variable": [
     {
-      "id": "924f7c6b-7f5b-482d-9295-9f4da6cce159",
+      "id": "df41468f-cf12-437f-9365-5633838aec96",
       "key": "firstName",
       "value": "Ben",
       "type": "string"
     },
     {
-      "id": "71fa8ad1-fce3-4c10-b6d7-8844802889f7",
+      "id": "6d500a38-48ef-4e25-9642-09374d5052e9",
       "key": "lastName",
       "value": "Smith",
       "type": "string"
     },
     {
-      "id": "b0229b7b-af29-49a9-9768-263fe6a54dee",
+      "id": "d602a608-57f6-4ec5-b0ed-e09379618c30",
       "key": "password",
       "value": "pw",
       "type": "string"
