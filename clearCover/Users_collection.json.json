@@ -17,26 +17,6 @@
               "script": {
                 "id": "2988e163-621a-444e-85b2-b99e6e777c98",
                 "exec": [
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                  "});",
-                  "",
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                  "});",
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                  "});",
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                  "});",
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                  "});",
-                  "pm.test(\"Response time is less than 200ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                  "});",
-                  "",
                   "",
                   "pm.test(\"Response time is less than 200ms\", function () {",
                   "    pm.expect(pm.response.responseTime).to.be.below(200);",
@@ -106,7 +86,7 @@
               }
             }
           ],
-          "_postman_id": "cbd866e7-4073-40e5-a2dc-bca0343b1da1",
+          "id": "cbd866e7-4073-40e5-a2dc-bca0343b1da1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -144,13 +124,10 @@
                   "description": "The user's password (required)",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
+              ]
             },
             "url": {
-              "raw": "{{url}}/create?{{foo}}=sdafsdfssef&foo=bar",
+              "raw": "{{url}}/create?{{foo}}=something else",
               "host": [
                 "{{url}}"
               ],
@@ -160,12 +137,13 @@
               "query": [
                 {
                   "key": "{{foo}}",
-                  "value": "sdafsdfssef"
+                  "value": "something else"
                 },
                 {
                   "key": "foo",
                   "value": "bar",
-                  "description": "This is used for XY"
+                  "description": "This is used for XY",
+                  "disabled": true
                 }
               ]
             },
@@ -343,7 +321,7 @@
           ]
         }
       ],
-      "_postman_id": "ced2e027-27f5-44ed-bb8e-6b056c3244b1"
+      "id": "ced2e027-27f5-44ed-bb8e-6b056c3244b1"
     },
     {
       "name": "Read",
@@ -472,7 +450,7 @@
               ]
             }
           ],
-          "_postman_id": "6dab34a7-750d-4f9a-9388-255109c666af",
+          "id": "6dab34a7-750d-4f9a-9388-255109c666af",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -683,7 +661,7 @@
               ]
             }
           ],
-          "_postman_id": "36b0afd4-2c22-4787-8dff-6864728d3f3f",
+          "id": "36b0afd4-2c22-4787-8dff-6864728d3f3f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -980,7 +958,7 @@
               ]
             }
           ],
-          "_postman_id": "dae01439-8c11-4752-b2c2-805b5310749d",
+          "id": "dae01439-8c11-4752-b2c2-805b5310749d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1067,7 +1045,7 @@
           ]
         }
       ],
-      "_postman_id": "aacce40a-7f28-48dd-b529-5a1ec4d3015b",
+      "id": "aacce40a-7f28-48dd-b529-5a1ec4d3015b",
       "event": [
         {
           "listen": "prerequest",
@@ -1246,7 +1224,7 @@
               ]
             }
           ],
-          "_postman_id": "d621d123-a8ef-4815-8e33-bc060071e9a4",
+          "id": "d621d123-a8ef-4815-8e33-bc060071e9a4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1276,10 +1254,7 @@
                   "type": "text",
                   "disabled": true
                 }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{url}}/update?id={{id}}",
@@ -1384,7 +1359,7 @@
           ]
         }
       ],
-      "_postman_id": "1497c984-8b7f-4465-bc56-1b591dd44c6f"
+      "id": "1497c984-8b7f-4465-bc56-1b591dd44c6f"
     },
     {
       "name": "Delete",
@@ -1509,7 +1484,7 @@
               ]
             }
           ],
-          "_postman_id": "57ff7818-df60-4e53-b4c5-19d3aef1383a",
+          "id": "57ff7818-df60-4e53-b4c5-19d3aef1383a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1525,10 +1500,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "",
-              "options": {
-                "raw": {}
-              }
+              "raw": ""
             },
             "url": {
               "raw": "{{url}}/delete?id={{id}}",
@@ -1619,7 +1591,7 @@
           ]
         }
       ],
-      "_postman_id": "9b6b8bb0-4148-49bd-beb1-217a17c4e019"
+      "id": "9b6b8bb0-4148-49bd-beb1-217a17c4e019"
     }
   ],
   "event": [
@@ -1646,22 +1618,19 @@
   ],
   "variable": [
     {
-      "id": "df41468f-cf12-437f-9365-5633838aec96",
+      "id": "e97d2565-ef7a-4519-9a30-7e16e42685a1",
       "key": "firstName",
-      "value": "Ben",
-      "type": "string"
+      "value": "Ben"
     },
     {
-      "id": "6d500a38-48ef-4e25-9642-09374d5052e9",
+      "id": "802af834-11d0-44e8-b4d9-fdf0f92d01e3",
       "key": "lastName",
-      "value": "Smith",
-      "type": "string"
+      "value": "Smith"
     },
     {
-      "id": "d602a608-57f6-4ec5-b0ed-e09379618c30",
+      "id": "551ce5e0-1bd9-4e0b-9d62-50a738d76fe3",
       "key": "password",
-      "value": "pw",
-      "type": "string"
+      "value": "pw"
     }
   ]
 }
