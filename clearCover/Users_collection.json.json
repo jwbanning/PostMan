@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "57b277c8-e233-4ba3-a6ce-2b5911a4b26f",
     "name": "Users API",
-    "description": "More context\n\n\nThis collection is designed to\n show how you might mock, test document a new API. In this case, we're assuming that we're going to create a basic user management API.\n\nIt has basic CRUD operations listed below.\n\nHit the \"Run in Postman\" button to see the pre-request and test scripts powering this collection.\n\nTry running the collection through the Collection Runner to see how the mock allows us to scope out all our responses and write our tests in advance.\n\n## Summary\n\nHaving undergone the effort of building out our collection in Postman first:\n\n- Using Postman Mocks\n- Writing tests\n \nThis has allowed us to then build out our API to match, meaning we could:\n(Update the `url` in the environment to `http://localhost:3000` and run the following Node API: https://github.com/matt-ball/users-api)\n\n- Debug our API as it was being built\n- Ensure parity with our mocks, meeting the designed blueprint\n- Run tests against the API as it was being built so that it's watertight\n\nAs a result:\n\n- We now have a shareable collection for our API\n- We have beautiful, rich documentation showing how it works\n- We can run our collection in a fully automated fashion and attach it to our CI/CD pipeline\n- We can create a Postman Monitor with no added effort to check for responsiveness and correctness",
+    "description": "Added teedst\n\n\nThis collection is designed to\n show how you might mock, test document a new API. In this case, we're assuming that we're going to create a basic user management API.\n\nIt has basic CRUD operations listed below.\n\nHit the \"Run in Postman\" button to see the pre-request and test scripts powering this collection.\n\nTry running the collection through the Collection Runner to see how the mock allows us to scope out all our responses and write our tests in advance.\n\n## Summary\n\nHaving undergone the effort of building out our collection in Postman first:\n\n- Using Postman Mocks\n- Writing tests\n \nThis has allowed us to then build out our API to match, meaning we could:\n(Update the `url` in the environment to `http://localhost:3000` and run the following Node API: https://github.com/matt-ball/users-api)\n\n- Debug our API as it was being built\n- Ensure parity with our mocks, meeting the designed blueprint\n- Run tests against the API as it was being built so that it's watertight\n\nAs a result:\n\n- We now have a shareable collection for our API\n- We have beautiful, rich documentation showing how it works\n- We can run our collection in a fully automated fashion and attach it to our CI/CD pipeline\n- We can create a Postman Monitor with no added effort to check for responsiveness and correctness",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -22,6 +22,22 @@
                   "    pm.expect(pm.response.responseTime).to.be.below(200);",
                   "});",
                   "",
+                  "",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
                   "",
                   "pm.test(\"Body matches string\", function () {",
                   "    pm.expect(pm.response.text()).to.include(\"Smith\");",
@@ -86,7 +102,7 @@
               }
             }
           ],
-          "_postman_id": "cbd866e7-4073-40e5-a2dc-bca0343b1da1",
+          "id": "cbd866e7-4073-40e5-a2dc-bca0343b1da1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -124,13 +140,10 @@
                   "description": "The user's password (required)",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
+              ]
             },
             "url": {
-              "raw": "{{url}}/create?{{foo}}=something else&eere=aasda",
+              "raw": "{{url}}/create?{{foo}}=something else&foo=bar&eere=aasda",
               "host": [
                 "{{url}}"
               ],
@@ -145,8 +158,7 @@
                 {
                   "key": "foo",
                   "value": "bar",
-                  "description": "This is used for XY",
-                  "disabled": true
+                  "description": "This is used for XY"
                 },
                 {
                   "key": "eere",
@@ -328,7 +340,7 @@
           ]
         }
       ],
-      "_postman_id": "ced2e027-27f5-44ed-bb8e-6b056c3244b1"
+      "id": "ced2e027-27f5-44ed-bb8e-6b056c3244b1"
     },
     {
       "name": "Read",
@@ -457,7 +469,7 @@
               ]
             }
           ],
-          "_postman_id": "6dab34a7-750d-4f9a-9388-255109c666af",
+          "id": "6dab34a7-750d-4f9a-9388-255109c666af",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -668,7 +680,7 @@
               ]
             }
           ],
-          "_postman_id": "36b0afd4-2c22-4787-8dff-6864728d3f3f",
+          "id": "36b0afd4-2c22-4787-8dff-6864728d3f3f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -965,7 +977,7 @@
               ]
             }
           ],
-          "_postman_id": "dae01439-8c11-4752-b2c2-805b5310749d",
+          "id": "dae01439-8c11-4752-b2c2-805b5310749d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1052,7 +1064,7 @@
           ]
         }
       ],
-      "_postman_id": "aacce40a-7f28-48dd-b529-5a1ec4d3015b",
+      "id": "aacce40a-7f28-48dd-b529-5a1ec4d3015b",
       "event": [
         {
           "listen": "prerequest",
@@ -1231,7 +1243,7 @@
               ]
             }
           ],
-          "_postman_id": "d621d123-a8ef-4815-8e33-bc060071e9a4",
+          "id": "d621d123-a8ef-4815-8e33-bc060071e9a4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1261,10 +1273,7 @@
                   "type": "text",
                   "disabled": true
                 }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{url}}/update?id={{id}}",
@@ -1369,7 +1378,7 @@
           ]
         }
       ],
-      "_postman_id": "1497c984-8b7f-4465-bc56-1b591dd44c6f"
+      "id": "1497c984-8b7f-4465-bc56-1b591dd44c6f"
     },
     {
       "name": "Delete",
@@ -1494,7 +1503,7 @@
               ]
             }
           ],
-          "_postman_id": "57ff7818-df60-4e53-b4c5-19d3aef1383a",
+          "id": "57ff7818-df60-4e53-b4c5-19d3aef1383a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1510,10 +1519,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "",
-              "options": {
-                "raw": {}
-              }
+              "raw": ""
             },
             "url": {
               "raw": "{{url}}/delete?id={{id}}",
@@ -1604,7 +1610,7 @@
           ]
         }
       ],
-      "_postman_id": "9b6b8bb0-4148-49bd-beb1-217a17c4e019"
+      "id": "9b6b8bb0-4148-49bd-beb1-217a17c4e019"
     }
   ],
   "event": [
@@ -1631,22 +1637,19 @@
   ],
   "variable": [
     {
-      "id": "5dd57d69-12e8-49a6-88d8-4f02aceae84f",
+      "id": "ff601a21-229d-4109-bc59-fec561ff429e",
       "key": "firstName",
-      "value": "Ben",
-      "type": "string"
+      "value": "Ben"
     },
     {
-      "id": "9a35620e-cfdb-413b-946d-81320dc28873",
+      "id": "9ed9a098-a899-4dce-9d97-367a7ab6aae0",
       "key": "lastName",
-      "value": "Smith",
-      "type": "string"
+      "value": "Smith"
     },
     {
-      "id": "61ed8557-70ea-403c-9d3f-3a1eed5e4a43",
+      "id": "b31211e8-874d-45ff-820a-f02a58f8b515",
       "key": "password",
-      "value": "pw",
-      "type": "string"
+      "value": "pw"
     }
   ]
 }
