@@ -26,18 +26,6 @@
                   "pm.test(\"Status code is 200\", function () {",
                   "    pm.response.to.have.status(200);",
                   "});",
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
                   "",
                   "pm.test(\"Body matches string\", function () {",
                   "    pm.expect(pm.response.text()).to.include(\"Smith\");",
@@ -1637,17 +1625,17 @@
   ],
   "variable": [
     {
-      "id": "ff601a21-229d-4109-bc59-fec561ff429e",
+      "id": "7b41691f-da8f-4b43-8ffa-ab959db7d4ac",
       "key": "firstName",
       "value": "Ben"
     },
     {
-      "id": "9ed9a098-a899-4dce-9d97-367a7ab6aae0",
+      "id": "8af24de6-0964-4554-8a5e-71e802271fd1",
       "key": "lastName",
       "value": "Smith"
     },
     {
-      "id": "b31211e8-874d-45ff-820a-f02a58f8b515",
+      "id": "96caacc6-8f6f-4a79-abae-b44b85cb7cd5",
       "key": "password",
       "value": "pw"
     }
