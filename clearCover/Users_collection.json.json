@@ -22,7 +22,6 @@
                   "    pm.expect(pm.response.responseTime).to.be.below(200);",
                   "});",
                   "",
-                  "",
                   "pm.test(\"Status code is 200\", function () {",
                   "    pm.response.to.have.status(200);",
                   "});",
@@ -31,15 +30,10 @@
                   "    pm.expect(pm.response.text()).to.include(\"Smith\");",
                   "});",
                   "",
-                  "",
-                  "",
                   "console.log(pm.response)",
                   "",
                   "const res = pm.response.json();",
                   "",
-                  "pm.test('Status code is 200', () => {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
                   "",
                   "pm.test('API response is successful', () => {",
                   "    pm.expect(res.status).to.eql('success');",
@@ -1625,17 +1619,17 @@
   ],
   "variable": [
     {
-      "id": "7b41691f-da8f-4b43-8ffa-ab959db7d4ac",
+      "id": "87ddb43b-a147-4fec-9bb1-b3106dbb1455",
       "key": "firstName",
       "value": "Ben"
     },
     {
-      "id": "8af24de6-0964-4554-8a5e-71e802271fd1",
+      "id": "3dad890e-518f-4083-b62d-a5c1a27208b3",
       "key": "lastName",
       "value": "Smith"
     },
     {
-      "id": "96caacc6-8f6f-4a79-abae-b44b85cb7cd5",
+      "id": "84bb3a63-7bc4-4729-a44e-f80f184883a5",
       "key": "password",
       "value": "pw"
     }
