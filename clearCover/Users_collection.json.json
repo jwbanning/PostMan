@@ -27,7 +27,7 @@
                   "});",
                   "",
                   "pm.test(\"Body matches string\", function () {",
-                  "    pm.expect(pm.response.text()).to.include(\"Smith\");",
+                  "    pm.expect(pm.response.text()).to.include(\"Jones\");",
                   "});",
                   "",
                   "console.log(pm.response)",
@@ -1619,17 +1619,17 @@
   ],
   "variable": [
     {
-      "id": "d654f59b-7892-44ae-afda-e4263dcf2706",
+      "id": "51a60292-fee2-47c8-ba13-e1fc3f5fa00e",
       "key": "firstName",
       "value": "Ben"
     },
     {
-      "id": "1f952f6d-8b87-4e5b-912f-e8a1ee4a457e",
+      "id": "affbab83-4511-49cd-a065-bb990e19ac6a",
       "key": "lastName",
       "value": "Smith"
     },
     {
-      "id": "62faff93-0cc0-4f14-b64c-326b762bb695",
+      "id": "501d2c72-8a44-4504-8852-82771f89cf13",
       "key": "password",
       "value": "pw"
     }
