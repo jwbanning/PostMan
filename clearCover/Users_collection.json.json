@@ -51,11 +51,11 @@
                   "    pm.expect(res).to.have.all.keys('status', 'id', 'firstName', 'lastName');",
                   "});",
                   "",
-                  "pm.test('Created user matches submitted user', () => {",
-                  "    const requestedUser = _.omit(rawToObject(pm.request.body.urlencoded.toString()), 'password');",
-                  "    const response = _.omit(res, ['id', 'status']);",
-                  "    pm.expect(requestedUser).to.eql(response);",
-                  "});",
+                  "// pm.test('Created user matches submitted user', () => {",
+                  "//     const requestedUser = _.omit(rawToObject(pm.request.body.urlencoded.toString()), 'password');",
+                  "//     const response = _.omit(res, ['id', 'status']);",
+                  "//     pm.expect(requestedUser).to.eql(response);",
+                  "// });",
                   "",
                   "pm.sendRequest({",
                   "    url: `${pm.environment.get('url')}/delete?id=${res.id}`,",
@@ -1619,17 +1619,17 @@
   ],
   "variable": [
     {
-      "id": "87ddb43b-a147-4fec-9bb1-b3106dbb1455",
+      "id": "d654f59b-7892-44ae-afda-e4263dcf2706",
       "key": "firstName",
       "value": "Ben"
     },
     {
-      "id": "3dad890e-518f-4083-b62d-a5c1a27208b3",
+      "id": "1f952f6d-8b87-4e5b-912f-e8a1ee4a457e",
       "key": "lastName",
       "value": "Smith"
     },
     {
-      "id": "84bb3a63-7bc4-4729-a44e-f80f184883a5",
+      "id": "62faff93-0cc0-4f14-b64c-326b762bb695",
       "key": "password",
       "value": "pw"
     }
